@@ -4,7 +4,7 @@ document.getElementById("search-btn").addEventListener("click",function(){
 
 
 // fetch("http://api.openweathermap.org/data/2.5/weather?q="+searchBox+"&APPID=9216a7e266ae268b7727d9f3890d4020")
-fetch(`http://api.openweathermap.org/data/2.5/weather?q=${searchBox}&appid=${id}`)
+fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchBox}&appid=${id}`)
 .then(response => response.json())
 .then(data => {
     console.log(data);
